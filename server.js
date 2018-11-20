@@ -63,6 +63,14 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects',
+    welcomeMessage: 'Welcome to my project page! The test website is built with express and hbs!',
+    //currentYear: new Date().getFullYear()
+  });
+});
+
 // app.get('/maintenance', (req, res) => {
 //   res.render('maintenance.hbs', {
 //     pageTitle: 'Maintenance Mode'
